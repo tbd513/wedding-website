@@ -3,24 +3,242 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title></title>
-        <meta name="description" content="">
+        <title>The Wedding of Nicolette and Tyler</title>
+        <meta name="description" content="The marriage of Nicolette Carlson and Tyler Davis, fall 2016. Find details, stories and photo pertaining to the wedding, here.">
+        <meta name="keywords" content="wedding, hood river, tyler, nikki, photos">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-
+        <link rel="icon" href="favicon.ico">
         <link rel="apple-touch-icon" href="apple-touch-icon.png">
-        <!-- Place favicon.ico in the root directory -->
-
+        <!-- stylesheets -->
         <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/layout.css">
         <link rel="stylesheet" href="css/main.css">
+        <link href='https://fonts.googleapis.com/css?family=Dosis:300,600|Yeseva+One' rel='stylesheet' type='text/css'>
+
         <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+        <!-- Snazzy Maps start -->
+        <script type="text/javascript" src="https://maps.googleapis.com/maps/api/https://maps.googleapis.com/maps/api/js?key=AIzaSyCaStEIhGInCAL_ezcy1z46S5pCRalc_QI&sensor=false"></script>
+
+        <script type="text/javascript">
+            // When the window has finished loading create our google map below
+            google.maps.event.addDomListener(window, 'load', init);
+
+            function init() {
+                // Basic options for a simple Google Map
+                // For more options see: https://developers.google.com/maps/documentation/javascript/reference#MapOptions
+                var mapOptions = {
+                    // How zoomed in you want the map to start at (always required)
+                    zoom: 11,
+
+                    // The latitude and longitude to center the map (always required)
+                    center: new google.maps.LatLng(40.6700, -73.9400), // New York
+
+                    // How you would like to style the map.
+                    // This is where you would paste any style found on Snazzy Maps.
+                    styles: [{"featureType":"water","elementType":"geometry","stylers":[{"visibility":"on"},{"color":"#aee2e0"}]},{"featureType":"landscape","elementType":"geometry.fill","stylers":[{"color":"#abce83"}]},{"featureType":"poi","elementType":"geometry.fill","stylers":[{"color":"#769E72"}]},{"featureType":"poi","elementType":"labels.text.fill","stylers":[{"color":"#7B8758"}]},{"featureType":"poi","elementType":"labels.text.stroke","stylers":[{"color":"#EBF4A4"}]},{"featureType":"poi.park","elementType":"geometry","stylers":[{"visibility":"simplified"},{"color":"#8dab68"}]},{"featureType":"road","elementType":"geometry.fill","stylers":[{"visibility":"simplified"}]},{"featureType":"road","elementType":"labels.text.fill","stylers":[{"color":"#5B5B3F"}]},{"featureType":"road","elementType":"labels.text.stroke","stylers":[{"color":"#ABCE83"}]},{"featureType":"road","elementType":"labels.icon","stylers":[{"visibility":"off"}]},{"featureType":"road.local","elementType":"geometry","stylers":[{"color":"#A4C67D"}]},{"featureType":"road.arterial","elementType":"geometry","stylers":[{"color":"#9BBF72"}]},{"featureType":"road.highway","elementType":"geometry","stylers":[{"color":"#EBF4A4"}]},{"featureType":"transit","stylers":[{"visibility":"off"}]},{"featureType":"administrative","elementType":"geometry.stroke","stylers":[{"visibility":"on"},{"color":"#87ae79"}]},{"featureType":"administrative","elementType":"geometry.fill","stylers":[{"color":"#7f2200"},{"visibility":"off"}]},{"featureType":"administrative","elementType":"labels.text.stroke","stylers":[{"color":"#ffffff"},{"visibility":"on"},{"weight":4.1}]},{"featureType":"administrative","elementType":"labels.text.fill","stylers":[{"color":"#495421"}]},{"featureType":"administrative.neighborhood","elementType":"labels","stylers":[{"visibility":"off"}]}]
+                };
+
+                // Get the HTML DOM element that will contain your map
+                // We are using a div with id="map" seen below in the <body>
+                var mapElement = document.getElementById('map');
+
+                // Create the Google Map using our element and options defined above
+                var map = new google.maps.Map(mapElement, mapOptions);
+
+                // Let's also add a marker while we're at it
+                var marker = new google.maps.Marker({
+                    position: new google.maps.LatLng(40.6700, -73.9400),
+                    map: map,
+                    title: 'Snazzy!'
+                });
+            }
+         </script>
+         <!-- Snazzy Maps end -->
     </head>
     <body>
         <!--[if lt IE 8]>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
 
-        <!-- Add your site or application content here -->
-        <p>Hello world! This is HTML5 Boilerplate Word!.</p>
+        <!-- Intro section -->
+        <div id="introduction">
+          <div id="header">
+            <p class="small head">Mountain Wedding  •  9.24.2016  •  5pm</p>
+          </div>
+          <div id="intro_content" class="grid">
+              <div class="row">
+                <div class="col-6 prefix_1">
+                  <h1 class="hero-name-xxl">Nicolette</h1>
+                  <h1 class="hero-name-xl">& Tyler</h1>
+                </div>
+                <div class="col-4 prefix_1">
+                  <p class="large">Are tying the knot September 24th, 2016 in Hood River, Oregon. Learn more below.</p>
+                    <div class="intro_nav">
+                        <a class="btn" href="#about">About</a>
+                        <a class="btn" href="#lodging">Lodging</a>
+                        <a class="btn" href="#day-of">Day Of</a>
+                    </div>
+                </div>
+              </div>
+          </div>
+        </div>
+        <!-- About section -->
+        <div id="about">
+          <div id="navigation_inner">
+            <a class="btn active" href="#about">About</a>
+            <a class="btn" href="#lodging">Lodging</a>
+            <a class="btn" href="#day-of">Day Of</a>
+          </div>
+          <div id="intro_copyblock" class="grid">
+            <div class="row">
+                <article class="col-4 prefix_2 intro_section_headline">
+                  <h2>The Right Time and Place</h2>
+                </article>
+                <article class="col-5 suffix_1 intro_section_copy">
+                  <p>We met on Mt.Hood in the spring of 2013. Two career focused, active, big personality Portlander’s, that at the time found no connection beyond another person to wave at while on the mountain. Later that fall during a chance meet up for coffee and lunch, conversations sparked interests in one another, revealing striking similarities <em>(we both have brothers for example)</em>. As winter approached we transitioned from coffee drinking buddies to snowboarding mates, soon realizing there was more to our story. Little did we know that our initial lunchbreak meetups and flirtations on the mountain would result in an unbreakable friendship and the love for each other we have today.</p>
+                </article>
+            </div>
+          </div>
+          <div id="newyears_story">
+          <div id="section_story" class="grid">
+              <div class="row">
+                <article class="col-5 prefix_2">
+                  <p>By News Years 2016, our three year anniversary together, any doubt of our compatibility and love for one another was left far behind as we set out for another adventure together. Nikki didn’t know at the time but I was waiting for a day together in the mountain so I could propose.</p>
+                </article>
+                <figure class="col-8 suffix_4">
+                  <img class="shadow" src="images/photo-nikki-news-years-backcountry.jpg" alt="Nikki splitboarding Tam McArthur Rim">
+                  <figcaption>New Years backcountry adventure in Central Oregon, January 1st, 2016.</figcaption>
+                </figure>
+              </div>
+          </div>
+         </div>
+         <div id="engagement_story">
+          <div id="section_story" class="grid section_story">
+              <div class="row">
+                <article class="col-5 prefix_2">
+                  <h3>Engagement</h3>
+                  <p>That day came one month later while exploring British Columbia during a February ski vacation. On our final day in the mountains we found ourselves in an isolated grove of trees without anyone around. Stumbling my words, I slowly proposed to Nikki and she quickly accepted, allowing me to slip the giant fake rock onto her finger.</p>
+                </article>
+                <figure class="col-10 prefix_2">
+                  <img class="shadow" src="images/photo-engagement-revelstoke.jpg" alt="Post proposal on Revelstoke Resort British Columbia">
+                </figure>
+                <article class="col-5 prefix_2 highlight">
+                  <p>We were both wrapped up in the moment and almost left the woods without a visual reminder of the occasion. Wiping tears from my cheek, trying to regain composure, it was Nikki who smartly suggested we snap a photo together before we emerge from the woods as an engaged couple.</p>
+                </article>
+              </div>
+          </div>
+          </div>
+          <div id="section_story" class="grid venue">
+              <div class="row">
+                <article class="col-5 prefix_2">
+                  <h3>Venue Decision</h3>
+                  <p>Having both lived in Portland, Oregon for the past eight years and having met each other on Mt.Hood, it is only fitting that we have our family and friends unite here. Planning a wedding in less than a year has lead us to a location less traveled and we couldn’t be more happy with this decision. The Husum Highlands Bed and Breakfast is a beautiful mountain venue that’s a bit off the beaten wedding trail.</p>
+                </article>
+              </div>
+            </div>
+            <div id="full-width">
+              <figure class="hero" >
+                <img class="full-width" src="images/photo-about-venue.jpg" alt="Carlson family at the beach in Hood River, Oregon">
+              </figure>
+          </div>
+        </div>
+
+
+
+        <!-- Lodging section -->
+        <div id="lodging">
+          <div id="navigation_inner">
+            <a class="btn" href="#about">About</a>
+            <a class="btn active" href="#lodging">Lodging</a>
+            <a class="btn" href="#day-of">Day Of</a>
+          </div>
+          <div id="intro_copyblock" class="grid">
+            <div class="row">
+                <article class="col-4 intro_section_headline">
+                  <h2>Lodging Options</h2>
+                </article>
+                <article class="col-5 intro_section_copy">
+                  <p>Lodging intro paragraph. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                </article>
+            </div>
+          </div>
+          <div id="lodging_option" class="grid">
+            <div class="row">
+                <article class="col-10 lodging_title">
+                  <h3>Camping</h3>
+                </article>
+                <figure class="col-5">
+                  <img src="images/photo-lodging-camping.jpg" alt="On-site camping at the wedding venue">
+                </figure>
+                <article class="col-5">
+                  <p>Camping message. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                </article>
+            </div>
+            <div class="row">
+                <article class="col-10 lodging_title">
+                  <h3>Hotels</h3>
+                </article>
+                <figure class="col-5">
+                  <img src="images/photo-lodging-hotels.jpg" alt="Hood River hotels">
+                </figure>
+                <article class="col-5">
+                  <p>Camping message. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                </article>
+            </div>
+            <div class="row">
+                <article class="col-10 lodging_title">
+                  <h3>House Rentals</h3>
+                </article>
+                <figure class="col-5">
+                  <img src="images/photo-lodging-camping.jpg" alt="Hood River vacation house rentals">
+                </figure>
+                <article class="col-5">
+                  <p>Camping message. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                </article>
+            </div>
+          </div>
+        </div>
+
+
+        <!-- Day of section -->
+        <div id="day-of">
+          <div id="navigation_inner">
+            <a class="btn" href="#about">About</a>
+            <a class="btn" href="#lodging">Lodging</a>
+            <a class="btn active" href="#day-of">Day Of</a>
+          </div>
+          <div id="intro_copyblock" class="grid">
+            <div class="row">
+                <article class="col-4 intro_section_headline">
+                  <h2>Day Of</h2>
+                </article>
+                <article class="col-5 intro_section_copy">
+                  <p>Lodging intro paragraph. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                </article>
+            </div>
+          </div>
+          <div id="schedule" class="grid">
+            <div class="row">
+              <p>Schedule of events</p>
+            </div>
+          </div>
+        </div>
+
+
+        <!-- footer -->
+        <footer id="footer">
+          <div class="row">
+          <article class="col-12 credits">
+            <p>©2016 TBD Creative Services <span>/</span>  Coded by hand with love  <span>/</span>  <a href="http://tbdworkbench.com/category/design-blog/">Learn more</a></p>
+          </article>
+          </div>
+        </footer>
+
+<!-- end of page -->
+
+
+
+
 
         <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.12.0.min.js"><\/script>')</script>
