@@ -1,0 +1,319 @@
+/*--  Custom 12 Column Grid
+1100px wide with 20px outside margins --*/
+
+body {
+}
+.wrapper {
+}
+.grid {
+    width : 100%;
+    margin: 0 auto;
+    max-width: 1100px;
+    /*-- grid outside padding --*/
+    padding: 20px 0 20px 20px;
+}
+
+/*-- grid cleafix --*/
+.grid:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/*-- row cleafix --*/
+.row:before,
+.row:after {
+    content:"";
+    display: table ;
+    clear:both;
+}
+
+/*-- columns --*/
+[class*='col-'] {
+    float: left;
+    display: inline;
+    min-height: 1px;
+}
+
+.col-1{
+    width: 8.33%;
+}
+.col-2{
+    width: 16.66%;
+}
+.col-3{
+    width: 24.99%;
+}
+.col-4{
+    width: 33.33%;
+}
+.col-5{
+    width: 41.66%;
+}
+.col-6{
+    width: 50%;
+}
+.col-7{
+    width: 58.33%;
+}
+.col-8{
+    width: 66.66%;
+}
+.col-9{
+    width: 74.99%;
+}
+.col-10{
+    width: 83.33%;
+}
+.col-11{
+    width: 91.66%;
+}
+.col-12{
+    width: 100%;
+}
+
+/*-- Starting spacer columns "prefix" --*/
+
+.prefix_1{
+    margin-left: 8.33%;
+}
+.prefix_2{
+    margin-left: 16.66%;
+}
+.prefix_3{
+    margin-left: 24.99%;
+}
+.prefix_4{
+    margin-left: 33.33%;
+}
+.prefix_5{
+    margin-left: 41.66%;
+}
+.prefix_6{
+    margin-left: 50%;
+}
+
+/*-- Ending spacer columns "prefix" --*/
+
+.suffix_1{
+    margin-right: 8.33%;
+}
+.suffix_2{
+    margin-right: 16.66%;
+}
+.suffix_3{
+    margin-right: 24.99%;
+}
+.suffix_4{
+    margin-right: 33.33%;
+}
+.suffix_5{
+    margin-right: 41.66%;
+}
+.suffix_6{
+    margin-right: 50%;
+}
+
+
+/*-- grid gutter --*/
+*, *:after, *:before{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+[class*='col-'] {
+    padding-right: 20px;
+}
+[class*='col-']:last-of-type {
+    padding-right: 20px;
+}
+
+/*-- tablet grid wrapper margins --*/
+@media all and (max-width:950px) {
+  .grid {
+      width : 100%;
+      margin: 0 40px auto;
+      max-width: 950px;
+    }
+    [class*='col-'] {
+        padding-right: 0px;
+    }
+    [class*='col-']:last-of-type {
+        padding-right: 0px;
+    }
+}
+
+
+/*-- tablet grid column adjustments--*/
+@media all and (max-width:950px) {
+  .col-1 {
+      width: 16.66%;
+    }
+    .col-2 {
+      width: 33.33%;
+    }
+    .col-3 {
+      width: 50%;
+    }
+    .col-4 {
+      width: 70%;
+    }
+    .col-5 {
+      width: 70%;
+    }
+    .col-6 {
+      width: 88%;
+    }
+    .col-7 {
+      width: 88%;
+    }
+    .col-8 {
+      width: 88%;
+    }
+    .col-9 {
+      width: 88%;
+    }
+    .col-10 {
+      width: 88%;
+    }
+    .col-11 {
+      width: 88%;
+    }
+    .col-12 {
+      width: 88%;
+    }
+    .row .col-2:last-of-type {
+      width: 100%;
+    }
+    .row .col-5 ~ .col-1 {
+      width: 100%;
+    }
+    .prefix_1{
+        margin-left: 0%;
+    }
+    .prefix_2{
+        margin-left: 0%;
+    }
+    .prefix_3{
+        margin-left: 0%;
+    }
+    .prefix_4{
+        margin-left: 0%;
+    }
+    .prefix_5{
+        margin-left: 0%;
+    }
+    .prefix_6{
+        margin-left: 0%;
+    }
+    .suffix_1{
+        margin-right: 0%;
+    }
+    .suffix_2{
+        margin-right: 0%;
+    }
+    .suffix_3{
+        margin-right: 0%;
+    }
+    .suffix_4{
+        margin-right: 0%;
+    }
+    .suffix_5{
+        margin-right: 0%;
+    }
+    .suffix_6{
+        margin-right: 0%;
+    }
+}
+/*-- tablet grid column adjustments--*/
+@media all and (max-width:770px) {
+  .col-1 {
+      width: 16.66%;
+    }
+    .col-2 {
+      width: 33.33%;
+    }
+    .col-3 {
+      width: 50%;
+    }
+    .col-4 {
+      width: 88%;
+    }
+    .col-5 {
+      width: 88%;
+    }
+  }
+
+
+  /*-- mobile grid wrapper margins --*/
+  @media all and (max-width:600px) {
+    .grid {
+        width : 100%;
+        margin: 0 auto;
+        max-width: 600px;
+      }
+  }
+
+/*-- mobile grid --*/
+@media all and (max-width:600px) {
+      .col-1 {
+          width: 33.33%;
+        }
+        .col-2 {
+          width: 50%;
+        }
+        .col-3 {
+          width: 88%;
+        }
+        .col-4 {
+          width: 95%;
+        }
+        .col-5 {
+          width: 95%;
+        }
+        .col-6 {
+          width: 95%;
+        }
+        .col-7 {
+          width: 95%;
+        }
+        .col-8 {
+          width: 95%;
+        }
+        .col-9 {
+          width: 95%;
+        }
+        .col-10 {
+          width: 95%;
+        }
+        .col-11 {
+          width: 95%;
+        }
+        .col-12 {
+          width: 95%;
+        }
+    }
+
+
+/** VERTICAL ALIGNMENT - http://css-tricks.com/centering-in-the-unknown/
+---------------------------------------- **/
+    .align-middle:before, .align-bottom:before, .align-top:before {
+      display: inline-block;
+      content: "";
+      height: 100%;
+      vertical-align: middle;
+    }
+    .align-middle > *, .align-bottom > *, .align-top > * {
+      display: inline-block;
+      vertical-align: middle;
+      float: none;
+    }
+
+    .align-bottom > * {
+      vertical-align: bottom;
+    }
+
+    .align-top > * {
+      vertical-align: top;
+    }
