@@ -16,44 +16,7 @@
         <link href='https://fonts.googleapis.com/css?family=Dosis:300,600|Yeseva+One' rel='stylesheet' type='text/css'>
 
         <script src="js/vendor/modernizr-2.8.3.min.js"></script>
-        <!-- Snazzy Maps start -->
-        <script type="text/javascript" src="https://maps.googleapis.com/maps/api/https://maps.googleapis.com/maps/api/js?key=AIzaSyCaStEIhGInCAL_ezcy1z46S5pCRalc_QI&sensor=false"></script>
 
-        <script type="text/javascript">
-            // When the window has finished loading create our google map below
-            google.maps.event.addDomListener(window, 'load', init);
-
-            function init() {
-                // Basic options for a simple Google Map
-                // For more options see: https://developers.google.com/maps/documentation/javascript/reference#MapOptions
-                var mapOptions = {
-                    // How zoomed in you want the map to start at (always required)
-                    zoom: 11,
-
-                    // The latitude and longitude to center the map (always required)
-                    center: new google.maps.LatLng(40.6700, -73.9400), // New York
-
-                    // How you would like to style the map.
-                    // This is where you would paste any style found on Snazzy Maps.
-                    styles: [{"featureType":"water","elementType":"geometry","stylers":[{"visibility":"on"},{"color":"#aee2e0"}]},{"featureType":"landscape","elementType":"geometry.fill","stylers":[{"color":"#abce83"}]},{"featureType":"poi","elementType":"geometry.fill","stylers":[{"color":"#769E72"}]},{"featureType":"poi","elementType":"labels.text.fill","stylers":[{"color":"#7B8758"}]},{"featureType":"poi","elementType":"labels.text.stroke","stylers":[{"color":"#EBF4A4"}]},{"featureType":"poi.park","elementType":"geometry","stylers":[{"visibility":"simplified"},{"color":"#8dab68"}]},{"featureType":"road","elementType":"geometry.fill","stylers":[{"visibility":"simplified"}]},{"featureType":"road","elementType":"labels.text.fill","stylers":[{"color":"#5B5B3F"}]},{"featureType":"road","elementType":"labels.text.stroke","stylers":[{"color":"#ABCE83"}]},{"featureType":"road","elementType":"labels.icon","stylers":[{"visibility":"off"}]},{"featureType":"road.local","elementType":"geometry","stylers":[{"color":"#A4C67D"}]},{"featureType":"road.arterial","elementType":"geometry","stylers":[{"color":"#9BBF72"}]},{"featureType":"road.highway","elementType":"geometry","stylers":[{"color":"#EBF4A4"}]},{"featureType":"transit","stylers":[{"visibility":"off"}]},{"featureType":"administrative","elementType":"geometry.stroke","stylers":[{"visibility":"on"},{"color":"#87ae79"}]},{"featureType":"administrative","elementType":"geometry.fill","stylers":[{"color":"#7f2200"},{"visibility":"off"}]},{"featureType":"administrative","elementType":"labels.text.stroke","stylers":[{"color":"#ffffff"},{"visibility":"on"},{"weight":4.1}]},{"featureType":"administrative","elementType":"labels.text.fill","stylers":[{"color":"#495421"}]},{"featureType":"administrative.neighborhood","elementType":"labels","stylers":[{"visibility":"off"}]}]
-                };
-
-                // Get the HTML DOM element that will contain your map
-                // We are using a div with id="map" seen below in the <body>
-                var mapElement = document.getElementById('map');
-
-                // Create the Google Map using our element and options defined above
-                var map = new google.maps.Map(mapElement, mapOptions);
-
-                // Let's also add a marker while we're at it
-                var marker = new google.maps.Marker({
-                    position: new google.maps.LatLng(40.6700, -73.9400),
-                    map: map,
-                    title: 'Snazzy!'
-                });
-            }
-         </script>
-         <!-- Snazzy Maps end -->
     </head>
     <body>
         <!--[if lt IE 8]>
@@ -154,46 +117,47 @@
           </div>
           <div id="intro_copyblock" class="grid">
             <div class="row">
-                <article class="col-4 intro_section_headline">
+                <article class="col-4 prefix_2 intro_section_headline">
                   <h2>Lodging Options</h2>
                 </article>
                 <article class="col-5 intro_section_copy">
-                  <p>Lodging intro paragraph. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                  <p>Hood River is an action-sports mecca, from hiking to wind surfing, you’ll find it here. The town’s natural beauty, easy access to Portland and a booming vacation house rental market, made our decision to get married here easy. We recommend you pad your travels with an extra day in Hood River to enjoy the many activities found in the lush apple growing valley below Mt.Hood.</p>
                 </article>
             </div>
           </div>
           <div id="lodging_option" class="grid">
-            <div class="row">
-                <article class="col-10 lodging_title">
+            <div class="row lodging">
+                <article class="col-10 prefix_1 lodging_title">
                   <h3>Camping</h3>
                 </article>
-                <figure class="col-5">
-                  <img src="images/photo-lodging-camping.jpg" alt="On-site camping at the wedding venue">
+                <figure class="col-6">
+                  <img class="lodging_img" src="images/photo-lodging-camping.jpg" alt="On-site camping at the wedding venue">
                 </figure>
-                <article class="col-5">
-                  <p>Camping message. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <article class="col-6">
+                  <p>When looking for a venue, camping was an important factor. If you want to stay on after the music stops and don’t want to fork out cash for a hotel room, then this is for you. I can’t guarantee Nikki will stay up past the 10pm bar closure but anyone is welcome to camp.
+There are few flat locations to set up tents before the ceremony and no flat parking for car camping unfortunately. The best camping will be in the ceremony lawn, where 5 plus tent will fit comfortably. There are two wooden tent platforms above the B&B grounds and another gaming side lawn where more tents will fit.</p>
                 </article>
             </div>
-            <div class="row">
-                <article class="col-10 lodging_title">
-                  <h3>Hotels</h3>
-                </article>
-                <figure class="col-5">
-                  <img src="images/photo-lodging-hotels.jpg" alt="Hood River hotels">
-                </figure>
-                <article class="col-5">
-                  <p>Camping message. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                </article>
-            </div>
-            <div class="row">
-                <article class="col-10 lodging_title">
+            <div class="row lodging">
+                <article class="col-10 prefix_1 lodging_title">
                   <h3>House Rentals</h3>
                 </article>
-                <figure class="col-5">
-                  <img src="images/photo-lodging-camping.jpg" alt="Hood River vacation house rentals">
+                <figure class="col-6">
+                  <img class="lodging_img" src="images/photo-lodging-rental-houses.jpg" alt="Hood River vacation house rentals">
                 </figure>
-                <article class="col-5">
-                  <p>Camping message. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <article class="col-6">
+                  <p>This is by far the best option if you don’t want to camp. There are many vacation homes for rent in Hood River, most of which are found on <a href="https://www.vrbo.com/vacation-rentals/usa/oregon/mt-hood-the-gorge/hood-river?from-date=2016-09-23&to-date=2016-09-25" target="_blank">VRBO</a> or <a href="https://www.airbnb.com/s/Hood-River--OR--United-States?guests=4&ss_id=xsl9od4n&source=bb&s_tag=hnkui2oF" target="_blank">AirBnB</a>. We suggest you choose a location close to downtown to be near the shuttle service drop off location and all the wonderful restaurants, breweries and shops downtown town. Prices for a good rental run between $125-$300 per night.</p>
+                </article>
+            </div>
+            <div class="row lodging">
+                <article class="col-10 prefix_1 lodging_title">
+                  <h3>Hotels</h3>
+                </article>
+                <figure class="col-6">
+                  <img class="lodging_img" src="images/photo-lodging-hotels.jpg" alt="Hood River hotels">
+                </figure>
+                <article class="col-6">
+                  <p>There are a few hotel options in Hood River. The <a href="http://www.hoodriverinn.com/" target="_blank">Best Western</a> is located on the river and has nice, clean rooms. The rooms for this time of year run roughly $250 a night. There is a <a href="http://www.comfortsuiteshoodriver.com/" target="_blank">Comfort Suites</a> west of downtown. It is not located in the most scenic area but the room rates are more reasonable, roughly $160-$180 a night. If you are looking for a more unusual place to stay there is the <a href="http://www.columbiagorgehotel.com/"target="_blank">Columbia Gorge Hotel</a>. It is a vintage hotel with beautiful gardens and views of the river. The rooms can be a little small for families but kitschy, clean, and unique. Rooms are about $290.</p>
                 </article>
             </div>
           </div>
@@ -209,17 +173,51 @@
           </div>
           <div id="intro_copyblock" class="grid">
             <div class="row">
-                <article class="col-4 intro_section_headline">
-                  <h2>Day Of</h2>
+                <article class="col-4 prefix_2 intro_section_headline">
+                  <h2>Wedding Day</h2>
                 </article>
                 <article class="col-5 intro_section_copy">
-                  <p>Lodging intro paragraph. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                  <p>Nikki and I invite you to join us high on a hilltop in Husum Washington at the Husum Highlands Bed and Breakfast. This low key venue location provides a relaxed, natural setting with a close connection to the mountains for us to celebrate our big day.</p>
                 </article>
             </div>
           </div>
           <div id="schedule" class="grid">
-            <div class="row">
-              <p>Schedule of events</p>
+            <div class="row day_of_section">
+              <figure class="col-2 prefix_1">
+                <img src="images/graphic-dayof-schedule.png" alt="">
+              </figure>
+              <article class="col-8 prefix_1 day_of_section">
+                <h3>Schedule</h3>
+                <p>Once you make it to the B&B feel free to head to the bar or stroll through the gardens. This will be a great chance to meet Dave Carlson and Lev Davis. They will most likely be found next to the bar chatting everyone up and getting the party started before the ceremony. We will have the ceremony start around 5pm. The party will start shortly after and continue until 10pm. Expect cool weather after sunset. This is an outdoor wedding on the edge of the Cascade mountains.</p>
+              </article>
+            </div>
+            <div class="row day_of_section">
+              <figure class="col-2 prefix_1">
+                <img src="images/graphic-dayof-food.png" alt="">
+              </figure>
+              <article class="col-8 prefix_1">
+                <h3>Food</h3>
+                <p>Dinner will be catered by Husum local Big Man’s rotisserie. He specializes in smoking and rotisserie of all kinds of meats. Not to sound cliche but Oregon and Washington have some amazing farms, wineries, and breweries so everything will be locally sourced. We’re looking forward to introducing you to some local favorites and specialties!</p>
+              </article>
+            </div>
+            <div class="row day_of_section">
+              <figure class="col-2 prefix_1">
+                <img src="images/graphic-dayof-directions.png" alt="">
+              </figure>
+              <article class="col-8 prefix_1">
+                <h3>Getting There</h3>
+                <p>This small B&B is a 20 minute drive north from Hood River, which puts it about 1hour and 20minutes from PDX airport. Drive north on Highway 141 that runs along the White Salmon river in Washington until you hit the very, very small town of Husum where you take a right on Oak Ridge road. You arrive at the B&B only after miles spent climbing a maintained dirt road that seems a little too long. Don’t worry, you’re getting close to a good view.<br />
+                <a href="https://www.google.com/maps/place/Husum+Highlands+Bed+%26+Breakfast/@45.844433,-121.470382,17z/data=!4m15!1m9!4m8!1m0!1m6!1m2!1s0x54966b680d3973f1:0xfa3afd1af70d803!2s70+Postgren+Road,+Husum+Highlands+Bed+%26+Breakfast,+Husum,+WA+98672!2m2!1d-121.468188!2d45.844433!3m4!1s0x54966b680d3973f1:0xfa3afd1af70d803!8m2!3d45.844433!4d-121.468188" target="_blank">Google Map Directions</a></p>
+                <p>A bus shuttle service will be available, leaving from Downtown Hood River Saturday afternoon. More details to come on time and pickup location. </p>
+              </article>
+            </div>
+            <div class="row day_of_section">
+              <article class="col-4 prefix_1 ">
+                <h4>Check Back Soon</h4>
+                <p>Check back in here after you receive your invitation for updated day-of information, an RSVP form and our Instagram handle.<br />
+Cheer, <em>- Nikki & Tyler</em></p>
+                <p><a href="#" class="btn">Back To Top</a></p>
+              </article>
             </div>
           </div>
         </div>
@@ -229,7 +227,7 @@
         <footer id="footer">
           <div class="row">
           <article class="col-12 credits">
-            <p>©2016 TBD Creative Services <span>/</span>  Coded by hand with love  <span>/</span>  <a href="http://tbdworkbench.com/category/design-blog/">Learn more</a></p>
+            <p>©2016 TBD Creative Services <span>/</span>  Coded By Hand With Love  <span>/</span>  <a href="http://tbdworkbench.com/category/design-blog/">Learn More</a></p>
           </article>
           </div>
         </footer>
