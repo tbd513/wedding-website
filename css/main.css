@@ -220,6 +220,7 @@ p {
   line-height: 1.3em;
   font-weight: 300;
   margin: 0 0 1em 0;
+  letter-spacing: .1px;
 }
 p:first-child {
     margin-top: 0;
